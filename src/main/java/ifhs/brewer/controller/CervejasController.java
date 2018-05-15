@@ -19,11 +19,6 @@ public class CervejasController {
 		return "cerveja/cadastroCerveja";
 	}
 	
-	@RequestMapping("/cervejas/cadastro")
-	public String cadastro(Cerveja cerveja) {
-		return "cerveja/cadastro-produto";
-	}	
-	
 	@RequestMapping(value = "/cervejas/novo", method = RequestMethod.POST)
 	public String cadastrar(@Valid Cerveja cerveja, BindingResult result, Model model, RedirectAttributes atributes){
 		if(result.hasErrors()) {
