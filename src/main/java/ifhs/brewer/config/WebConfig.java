@@ -46,7 +46,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 		engine.setEnableSpringELCompiler(true);
 		engine.setTemplateResolver(templateResolver());
 		
-//		engine.setDialect(new LayoutDialect());
+		engine.setDialect(new LayoutDialect());
 		return engine;
 	}
 	
